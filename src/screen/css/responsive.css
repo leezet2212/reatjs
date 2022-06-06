@@ -1,0 +1,116 @@
+.main {
+    width: auto;
+    min-height: 100vh;
+    max-width: 100%;
+    margin: 10px auto;
+    background-color: #fff;
+    padding-bottom: 20px;
+}
+
+/* product */
+.main_product {
+    display: flex;
+    padding: 10px;
+}
+
+.main_product-img img {
+    width: 100%;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.main_product-info {
+    width: 60%;
+    padding: 10px;
+}
+
+/* column layout */
+.column-layout {
+    display: flex;
+    margin-top: 36px;
+    background-color: #fff;
+    padding: 12px 0;
+}
+
+.column-layout_category {
+    width: 20%;
+    padding: 0 16px;
+}
+
+.column-layout_container {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column-item {
+    width: 25%;
+    padding: 0 16px;
+}
+
+/* feature layout*/
+.feature-layout {
+    margin-top: 36px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature-item {
+    padding: 12px 16px;
+    margin-top: 16px;
+    flex-basis: 30%;
+}
+
+.feature-item:nth-child(1) {
+    background-color: rgb(192, 227, 222);
+}
+
+.feature-item:nth-child(2) {
+    background-color: rgb(227, 200, 192);
+}
+
+.feature-item:nth-child(3) {
+    background-color: rgb(226, 192, 227);
+}
+
+@media screen and (max-width: 63.9375em){
+    .main_product {
+        flex-direction: column-reverse;
+    }
+    .main_product-info {
+        width: 100%;
+    }
+    .main_product-desc {
+        display: none;
+    }
+    .main_product-img img {
+        width: 85%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 63.9375em) and (min-width:46.25em) {
+    .column-item {
+        width: 33.33%;
+    }
+}
+
+@media screen and (max-width:46.1875em) {
+    .column-layout_category {
+        display: none;
+    }
+    .column-layout_container {
+        width: 100%;
+    }
+    .column-item {
+        width: 100%;
+        text-align: center;
+    }
+    .feature-layout {
+        flex-direction: column;
+    }
+}

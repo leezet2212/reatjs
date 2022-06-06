@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+.mobile,
+.tablet,
+.pc {
+  margin:auto;
+  font-size: 100px;
+  color: blue;
+  display: none;
+}
+
+@media screen and (min-width: 64em){
+ .pc {
+   display: block;
+ }
+}
+@media screen and (max-width: 63.9375em) and (min-width:46.25em){
+  .tablet {
+    display: block;
+  }
+}
+@media screen and (max-width:46.1875em){
+  .mobile {
+    display: block;
+  }
+}
