@@ -16,7 +16,6 @@ const TheBand = () => {
         setIsShowing(!isShowing)
     }
     const hidenHandle = ()=> {
-        console.log(isShowingBars)
         setIsShowingBars(!isShowingBars)
     }
     useEffect(() => {
