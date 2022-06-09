@@ -24,7 +24,7 @@ const TheBand = () => {
   return (
     <>
     <div id="main">
-      <div id="headermember-item ">
+      <div id="header">
         <ul id="nav">
           <li>
             <a href="#">HOME</a>
@@ -230,7 +230,7 @@ const TheBand = () => {
                 <button id="buy-ticket" onClick={handleBuyTicket}>Pay<FaRegCheckCircle/></button>
             </div>
             <div className="modal-footer">
-                <p>Need <a href="#">help?</a></p>
+                <p>Need <a href="#home">help?</a></p>
             </div>
         </div>
     </div>

@@ -39,7 +39,9 @@
     width: 20%;
     padding: 0 16px;
 }
-
+.column-layout_category ul {
+    list-style-type: none;
+}
 .column-layout_container {
     width: 80%;
     display: flex;

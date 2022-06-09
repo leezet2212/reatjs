@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import TodoList from "./screen/todo-list";
 import Content from "./screen/content";
 import Responsive from "./screen/responsive";
-// import TheBand from "./screen/layout/the-band";
+import TheBand from "./screen/layout/the-band";
 import "./App.css";
 
 const gifts = ["CPU i9", "RAM 32G RGB", "RGB Keyboard", "I7 Core"];
@@ -56,7 +56,7 @@ function App() {
   };
   return (
     <>
-      {/* <TheBand></TheBand> */}
+      <TheBand></TheBand>
       <Responsive ></Responsive>
       <br />
       <h1 className="mobile">Mobile</h1>
